@@ -1,0 +1,5 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="product-detail">
+  <image src="http://www.yxsdz.com/uploadfile/attachment/{{getProduct_detail.picpaths}}" style="width:100%;"></image>
+  <template is="wxParse" data="{{wxParseData:product.nodes}}" />
+</view>

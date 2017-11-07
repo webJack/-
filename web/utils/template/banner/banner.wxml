@@ -1,0 +1,21 @@
+<template name="banner">
+<view class='banner'>
+      <swiper autoplay="true" interval="5000" duration="1000" circular="true" indicator-dots="true" indicator-active-color="white" style='height:250rpx'>
+         <block>
+            <swiper-item>
+               <image src="/images/banner1.jpg" class="slide-image" style="width:100%;height:100%;"/>
+            </swiper-item>
+         </block>
+         <block>
+            <swiper-item>
+               <image src="/images/banner2.jpg" class="slide-image" style="width:100%;height:100%;"/>
+            </swiper-item>
+         </block>
+         <block>
+            <swiper-item>
+               <image src="/images/banner_3.jpg" class="slide-image" style="width:100%;height:100%;"/>
+            </swiper-item>
+         </block>
+    </swiper>
+</view>
+</template>

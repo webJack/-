@@ -1,0 +1,106 @@
+.productlist .main .cate-list{
+  padding:20rpx 0rpx; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ccc;
+  text-align: center;
+  height: 150rpx;
+  overflow:auto;
+}
+.productlist .main .cate-list .list-content{
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+}
+.productlist .main .cate-list .cur{
+  color: #1162d4;
+}
+.productlist .main .cate-list .list-tisi{
+  color: #999;
+  margin-left: 40%;
+}
+.productlist .main .close-box{
+  color: #1162d4;
+  text-align: center;
+  margin-top: 5rpx;
+}
+
+.productlist .main{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.productlist .main .main-content{
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+.productlist .main .main-content .product-box{
+  display: inline-block;
+  margin-bottom: 50rpx;
+  width: 45%;
+}
+.productlist .main .main-content .product-box:nth-child(2n){
+  margin-left: 60rpx;
+}
+.productlist .main .main-content .product-box image{
+  border:1rpx solid #999;
+  border-radius: 50%;
+  box-shadow: 5rpx 5rpx 5rpx #000;
+  width: 300rpx;
+  height: 300rpx;
+}
+.productlist .main .main-content .product-box .product-name{
+  text-align: center;
+  margin-top: 10rpx;
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;  
+}
+.productlist .main .main-content .product-tisi{
+  color: #999;
+  text-align: center;
+  margin-top: 20%;
+}
+
+
+.productlist .product-menu{
+  
+  overflow: hidden;
+}
+.productlist .product-menu .section{
+  width: 700%;
+  border-top:1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  line-height: 80rpx;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.productlist .product-menu .section text{
+  color: #999;
+  font-size: 28rpx;
+}
+.productlist .product-menu .section .cur{
+  color:#1162d4;
+  border-bottom: 1rpx solid #1162d4;
+  font-weight: bold;
+  padding-bottom: 17rpx;
+}
+.productlist .product-menu .section text+text{
+  margin-left: 40rpx;
+}
+
+
+.page{
+  width: 85%;
+  margin: 0rpx auto;
+}
+.page .page-num{
+  width: 25%;
+}
+.page text{
+  display: inline-block;
+  width: 17%;
+  text-align: center;
+  font-size: 30rpx;
+  z-index: 10000;
+}

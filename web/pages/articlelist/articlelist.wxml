@@ -1,0 +1,29 @@
+<import src="../../utils/template/banner/banner.wxml" />
+  <template is="banner"></template>
+<view class="articlelist">
+
+  <view class="main">
+    <view class="main-title">
+      <text>您的位置: >> </text>
+      <text class="position">{{channels[6].title}}</text>
+    </view>
+
+    <view class="main-content">
+      <view class="product-box" wx:for="{{article_list}}" >
+        <view class="new-title" data-current="{{item.id}}" bindtap="to_article_detail">{{item.title}}</view>
+        <view class="new-time">{{gettime[index]}}</view>
+        
+      </view>
+    </view>
+
+    <view class='page' wx-if="{{article_list.length!=0}}">
+      <text>{{current_page}}/{{last_page}}</text>
+      <text  bindtap="prevPage">上一页</text>
+      <text bindtap="nextPage">下一页</text>
+      <text bindtap='firstPage'>首页</text>
+      <text bindtap='lastPage'>尾页</text>
+    </view>
+    
+  </view>
+
+</view>

@@ -1,0 +1,52 @@
+<import src="../../utils/template/banner/banner.wxml" />
+
+<template is="banner"></template>
+<view class="productlist">
+  <view class="main">
+    <view class="main-title">
+      <text>您的位置: >> </text>
+      <text class="position">{{channels[0].title}}</text>
+    </view>
+
+    <view class="product-menu">
+            <view class="section">
+              <movable-area style="height: 40px;width: 100%;">
+               <movable-view style="height: 40px; width: 150%;" x="{{x}}" y="{{y}}" direction="all" >
+               <text class="{{cur_class==0?'cur':''}}" bindtap="show" data-current="0" bindtap="showALL">全部</text>
+   
+                <text wx:for="{{topCate}}" bindtap="show"  data-current="{{index+1}}">
+                  <text  class="{{cur_class==index+1?'cur':''}}" >{{item.title}}</text>
+                </text>
+                
+               </movable-view>
+              </movable-area>
+          </view>
+    </view>
+
+    <view class="cate-list" wx:if="{{cate_box_status}}">
+      <view wx:for="{{secCate}}" class="list-content {{cur_class2==item.id?'cur':''}}">
+        <text bindtap="show_cate" data-current="{{item.id}}">{{item.title}}</text>
+      </view>
+      <view class="list-tisi" wx:if="{{secCate.length==0}}">没有更多分类</view>
+    </view>
+    <view class="close-box" wx:if="{{cate_box_status}}" bindtap="hideBox">收起</view>
+
+    <view class="main-content">
+      <view class="product-box" wx:for="{{product_list}}" bindtap="to_product_detail"  data-current="{{item.id}}">
+        <image src="http://www.yxsdz.com/uploadfile/attachment/{{item.picpaths}}"></image>
+        <view class="product-name">{{item.name}}</view>
+      </view>
+      <view class="product-tisi" wx:if="{{product_list.length==0}}">没有该类产品</view>
+    </view>
+
+    <view class='page' wx-if="{{product_list.length!=0}}">
+      <text class='page-num'>{{current_page}}/{{last_page}}</text>
+      <text  bindtap="prevPage">上一页</text>
+      <text bindtap="nextPage">下一页</text>
+      <text bindtap='firstPage'>首页</text>
+      <text bindtap='lastPage'>尾页</text>
+    </view>
+
+  </view>
+
+</view>

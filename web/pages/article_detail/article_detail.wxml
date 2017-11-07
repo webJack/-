@@ -1,0 +1,35 @@
+<import src="../../wxParse/wxParse.wxml" />
+<scroll-view scroll-y="true" bindscroll="scroll" scroll-top="{{scrollTop}}" bindscrolltolower="getMore" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+<view class="articlelist">
+  <view class="header">
+    <image src="../../images/index_2.jpg" style="width:100%;height:200rpx;"></image>
+  </view>
+
+  <view class="main">
+
+    <view class="main-content">
+      <view class="content-title">{{getArticles_detail[1].title}}</view>
+      <view class="info">
+        <text class="time">{{gettime[1]}}</text>
+        <text class="name">山西大型锻造厂家</text>
+      </view>
+       <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
+    </view>
+  </view>
+
+  <view class="article-tisi">
+      <image src="../../images/article_info.jpg"></image>
+      <view>文章原创如需转载请注明山西永鑫生锻件厂提供！</view>
+  </view>
+
+  
+
+
+  <view class="other">
+    <view class="prev" bindtap="prev_detail" data-current="{{getArticles_detail[2].id}}" wx:if="{{!((getArticles_detail.length)==2&&(getArticles_detail[0].id<getArticles_detail[1].id))}}">上一篇：{{getArticles_detail[2].title}} </view>
+    <view class="next" bindtap="next_detail" data-current="{{getArticles_detail[0].id}}" wx:if="{{!((getArticles_detail.length)==2&&(getArticles_detail[0].id>getArticles_detail[1].id))}}">下一篇：{{getArticles_detail[0].title}}</view>
+  </view>
+
+</view>
+<button open-type="share">分享文章</button>
+</scroll-view>

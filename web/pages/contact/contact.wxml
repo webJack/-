@@ -1,0 +1,43 @@
+<import src="../../utils/template/banner/banner.wxml" />
+  <template is="banner"></template>
+<view class="articlelist">
+
+  <view class="main">
+    <view class="main-title">
+      <text>您的位置: >> </text>
+      <text class="position">{{channels[1].title}}</text>
+    </view>
+
+    <view class="company">
+      <view class="company-pic" style="width:80rpx;height:80rpx;background-image:url('./images/contact.gif') ;"></view>
+      <view class="company-right">
+        <view>公司: {{contact.company}}</view>
+        <view>地址: {{contact.address}}</view>
+        <view>邮编: {{contact.zipcode}}</view>
+      </view>
+    </view>
+
+    <view class="contact">
+      <view class="contact-pic" style="width:80rpx;height:80rpx;background-image:url('./images/contact.gif'); background-position-y:-146px;"></view>
+      <view class="contact-right">
+        <view>联系人: {{contact.contact}}</view>
+        <view bindtap="calling">电话: {{contact.phone}}</view>
+        <view>传真: {{contact.fax}}</view>
+        <view>邮箱: {{contact.email}}</view>
+      </view>
+    </view>
+
+    <view class="online">
+      <view class="online-pic" style="width:75rpx;height:80rpx;background-image:url('./images/contact.gif'); background-position-y:-296px;"></view>
+      <view class="online-right">
+        <view><text style="width:35rpx;height:40rpx;display:inline-block;background-image:url('./images/bg_contact2.gif');margin-right:10rpx;"></text>{{contact.phone}}</view>
+        <view><text style="width:35rpx;height:40rpx;display:inline-block;background-image:url('./images/bg_contact2.gif');background-position-y:-62rpx;margin-right:10rpx;"></text>{{contact.qq}}</view>
+        <view><text style="width:35rpx;height:40rpx;display:inline-block;background-image:url('./images/bg_contact2.gif');background-position-y:-182rpx;margin-right:10rpx;"></text>{{contact.aliww}}</view>
+      </view>
+    </view>
+
+    <map id="map" longitude="113.016675" latitude="38.515437" scale="15" show-location style="width: 100%; height: 350px;">
+</map>
+  </view>
+
+</view>

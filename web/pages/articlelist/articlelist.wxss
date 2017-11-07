@@ -1,0 +1,37 @@
+.articlelist .main{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.articlelist .main .main-content{
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+.articlelist .main .main-content .product-box{
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #999;
+  display: flex;
+  justify-content: space-between;
+}
+.articlelist .main .main-content .product-box .new-title {
+  width: 60%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.articlelist .main .main-content .product-box .new-time{
+  color: #FF6600;
+  font-size: 26rpx;
+}
+
+.page{
+  width: 85%;
+  margin: 0rpx auto;
+  
+}
+.page text{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 32rpx;
+  z-index: 10000;
+}

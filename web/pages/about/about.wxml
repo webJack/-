@@ -1,0 +1,21 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="about">
+  <view class="about-nav">
+    <view class="about-me {{cur_status==0?'cur':''}}" data-current="0" bindtap="curtab">关于我们</view>
+    <view class="about-process {{cur_status==1?'cur':''}}" data-current="1" bindtap="curtab">工艺流程</view>
+    <view class="about-course {{cur_status==2?'cur':''}}" data-current="2" bindtap="curtab">发展历程</view>
+  </view>
+  
+    <view class="content" wx:if="{{cur_status==0}}">
+      <template is="wxParse" data="{{wxParseData:company.nodes}}" />
+    </view>
+
+    <view class="content" wx:if="{{cur_status==1}}">
+      <template is="wxParse" data="{{wxParseData:process.nodes}}" />
+    </view>
+
+    <view class="content" wx:if="{{cur_status==2}}">
+      <template is="wxParse" data="{{wxParseData:course.nodes}}" />
+    </view>
+
+</view>

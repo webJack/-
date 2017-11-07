@@ -1,0 +1,78 @@
+.articlelist .main{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.articlelist .main .main-content{
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+.articlelist .main .main-content .product-box{
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #999;
+  display: flex;
+  justify-content: space-between;
+}
+.articlelist .main .main-content .product-box .new-title {
+  width: 60%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.articlelist .main .main-content .product-box .new-time{
+  color: #FF6600;
+  font-size: 26rpx;
+}
+.articlelist .main-content{
+  margin:30rpx 0rpx;
+  font-size: 30rpx;
+}
+.articlelist .main-content .content-title{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.articlelist .main-content .info{
+  text-align: center;
+  margin:30rpx 0rpx;
+}
+.articlelist .main-content .info .time{
+  color: red;
+  font-size: 26rpx;
+}
+.articlelist .main-content .info .name{
+  color: #999;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.articlelist .main-content image{
+  width: 100%;
+  margin:80rpx 0rpx;
+}
+.articlelist .main-content .content1{
+  text-indent: 70rpx;
+  text-align: justify;
+}
+.articlelist .main-content .content2{
+  text-indent: 70rpx;
+  text-align: justify;
+}
+.articlelist .main-content .content2 view{
+  margin-bottom: 10rpx;
+}
+
+.articlelist  .article-tisi{
+  margin: 50rpx 0rpx;
+}
+.articlelist  .article-tisi image{
+  width: 100%;
+  height: 150rpx;
+}
+.articlelist  .article-tisi view{
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+}
+.articlelist .other{
+  font-size: 30rpx;
+  padding: 30rpx;
+}

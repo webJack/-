@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/product_detail/product_detail",
+    "utils/template/banner/banner",
+    "pages/article_detail/article_detail",
+    "pages/about/about",
+    "pages/articlelist/articlelist",
+    "pages/contact/contact",
+    "pages/productlist/productlist"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "永鑫生锻造",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#1162d4",
+    "color": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon4.png",
+        "selectedIconPath": "images/icon4.png"
+      },
+      {
+        "pagePath": "pages/productlist/productlist",
+        "text": "锻件展示",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/icon1.png"
+      },
+      {
+        "pagePath": "pages/articlelist/articlelist",
+        "text": "新闻",
+        "iconPath": "images/icon3.png",
+        "selectedIconPath": "images/icon3.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/icon2.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系",
+        "iconPath": "images/icon5.png",
+        "selectedIconPath": "images/icon5.png"
+      }
+    ]
+  }
+}

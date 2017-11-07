@@ -1,0 +1,19 @@
+.footer{
+  width: 100%;
+}
+.footer .content{
+  background: #444B55;
+  color: #fff;
+  padding: 50rpx 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.footer .content-info{
+  background: #999;
+  padding: 50rpx 30rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+}

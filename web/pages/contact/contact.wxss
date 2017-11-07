@@ -1,0 +1,41 @@
+.articlelist .main{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.articlelist .main .main-content{
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+
+.articlelist .main .company {
+  display: flex;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding: 30rpx 0rpx;
+  border-bottom: 1rpx dotted #c0c0c0;
+}
+.articlelist .main .company .company-pic{
+  margin-right: 10rpx;
+}
+
+.articlelist .main .contact {
+  display: flex;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding: 30rpx 0rpx;
+  border-bottom: 1rpx dotted #c0c0c0;
+}
+.articlelist .main .contact .contact-pic{
+  margin-right: 10rpx;
+}
+
+.articlelist .main .online {
+  display: flex;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding: 30rpx 0rpx;
+  border-bottom: 1rpx dotted #c0c0c0;
+}
+.articlelist .main .online .online-pic{
+  margin-right: 10rpx;
+}

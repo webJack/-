@@ -1,0 +1,82 @@
+<import src="../../utils/template/banner/banner.wxml" />
+  <template is="banner"></template>
+  
+<view class="container">
+   
+   <view class='section1 content section'>
+      <text class="title">公司简介</text>
+      <view class='intro'>
+         <text>长期于起重机、港机、机车、堆取料机、卸船机、液压、矿山、钢厂、冶金、焦化、挖掘机、工程等企业合作。配套生产 车轮、齿轮、齿圈、火车轮、轮箍、挖掘机底座、支撑座、滑轮、链轮、行车轮、天车轮、筒类、活塞杆、轴类 等，30吨以下锻件均可按客户图纸尺寸、材质化学成分要求、自由锻造，员工100余名。出口韩国、日本、俄罗斯、巴西、欧洲等多国优质产品。
+         </text>
+      </view>
+   </view>
+   <view class='section2 section'>
+      <text class="title">产品展示</text>
+      <view class='pro-content content'>
+         <view class='pro-image' wx:for="{{exhibition_list}}" bindtap="to_productlist" data-current="{{item.id}}">
+            <image src='http://www.yxsdz.com/uploadfile/attachment/{{item.picpaths}}'></image>
+            <text class='img-title'>{{item.name}}</text>
+         </view>
+      </view>
+   </view>
+
+   <view class='section3 content section'>
+      <text class="title">新闻中心</text>
+      <view class='new-content'>
+         <view class='news-list'>
+            <view class='news-title' wx:for="{{update_article}}" bindtap="to_article_detail" data-current="{{item.id}}">
+               <text class='h3'>{{item.title}}</text>
+               <text class='news-time'>{{gettime[index]}}</text>
+            </view>
+            
+         </view>
+      </view>
+   </view>
+  
+
+   <view class='section4 section'>
+      <text class="title">实力见证</text>
+      <view class='banner'>
+         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" indicator-dots="true" indicator-active-color="white" style='height:470rpx'>
+            <block wx:for="{{strength_list}}" wx:key="dd">
+               <swiper-item>
+                  <view class='list'>
+                     <view class="img-list"  wx:for="{{item}}">
+                        <image src="{{item[0]}}" class="slide-image" />
+                        <text>{{item[1]}}</text>
+                     </view>
+                  </view>
+               </swiper-item>
+            </block>
+         </swiper>
+      </view>
+   </view>
+   <view class='section5 content section'>
+      <text class="title">最新产品</text>
+      <view class='new-content'>
+         <view class='news-list'>
+            <view class='news-title' wx:for="{{update_product}}" bindtap="to_product_detail" data-current="{{item.id}}">
+               <text class='h3'>{{item.name}}</text>
+               <text class='news-time'>{{gettime2[index]}}</text>
+            </view>
+         </view>
+      </view>
+   </view>
+
+   <view class='section6 section'>
+      <text class="title">合作伙伴</text>
+      <view class='banner'>
+         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" indicator-dots="true" indicator-active-color="white" style='height:350rpx'>
+            <block wx:for="{{partner_list}}" wx:key="dd">
+               <swiper-item>
+                  <view class='list'>
+                     <view class="img-list"  wx:for="{{item}}">
+                        <image src="{{item[0]}}" class="slide-image" style='height:200rpx'/>
+                     </view>
+                  </view>
+               </swiper-item>
+            </block>
+         </swiper>
+      </view>
+   </view>
+</view>
